@@ -1,3 +1,6 @@
 [submodule "sign-frontend"]
 	path = sign-frontend
 	url = https://github.com/otterlee9043/sign-frontend
+[submodule "sign-backend"]
+	path = sign-backend
+	url = https://github.com/otterlee9043/sign-backend
