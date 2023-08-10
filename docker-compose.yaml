@@ -1,0 +1,71 @@
+services:
+  sign-backend:
+    image: otterlee99/sign-backend:latest
+    container_name: sign-backend
+    restart: always
+    environment:
+      DB_URL: ${DB_URL}
+      DB_USERNAME: ${DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      GOOGLE_OAUTH_CLIENT_ID: ${GOOGLE_OAUTH_CLIENT_ID}
+      GOOGLE_OAUTH_CLIENT_SECRET: ${GOOGLE_OAUTH_CLIENT_SECRET}
+      KAKAO_OAUTH_CLIENT_ID: ${KAKAO_OAUTH_CLIENT_ID}
+      KAKAO_OAUTH_CLIENT_SECRET: ${KAKAO_OAUTH_CLIENT_SECRET}
+      SPRING_ACTIVE_PROFILE: ${SPRING_ACTIVE_PROFILE}
+    expose:
+      - 8080
+    volumes:
+      - ./sign-backend/src/main/resources/sql:/app/sql
+    networks:
+      - sign-network
+    depends_on: # 종속성 설정으로 서비스 실행 순서 보장
+      - db
+
+  sign-frontend:
+    image: otterlee99/sign-frontend:latest
+    container_name: sign-frontend
+    restart: always
+    volumes:
+      - ./log/frontend:/var/log/nginx
+    expose:
+      - 3000
+    environment:
+      NODE_ENV: production
+    networks:
+      - sign-network
+
+  nginx:
+    image: nginx
+    container_name: nginx
+    restart: always
+    ports: # container의 port를 host machine의 port와 매핑
+      - "80:80"
+    volumes: # host machine(docker-compose 실행하는)에 있는 디렉토리나 파일을 container에 마운트
+      - ./log/nginx:/var/log/nginx
+      - ./nginx:/etc/nginx/conf.d
+    depends_on:
+      - sign-backend
+      - sign-frontend
+    networks:
+      - sign-network
+
+  db:
+    image: mariadb
+    container_name: db
+    restart: always
+    ports:
+      - 3307:3306
+    command: --lower_case_table_names=1
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: sign
+    volumes:
+      - ./mysql-init:/docker-entrypoint-initdb.d
+    networks:
+      - sign-network
+
+networks:
+  sign-network:
+volumes:
+  mysql-data:
