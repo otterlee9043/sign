@@ -1,0 +1,3 @@
+[submodule "sign-frontend"]
+	path = sign-frontend
+	url = https://github.com/otterlee9043/sign-frontend
