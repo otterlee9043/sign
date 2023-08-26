@@ -7,7 +7,7 @@ on:
 
 env:
   AWS_REGION: ap-northeast-2                  
-  ECS_SERVICE: sign-github-action-2
+  ECS_SERVICE: sign-github-actions-2
   ECS_CLUSTER: SignCluster2023
   ECS_TASK_DEFINITION: sign-app
 
