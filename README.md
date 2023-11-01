@@ -5,7 +5,7 @@
 
 ## **Github** https://github.com/otterlee9043/sign
 
-## **개발노트**  [📔]([https://enormous-lime-c78.notion.site/Sign-f46fdfda5ef8493983e70ca025712d7d?pvs=4])
+## **개발노트**  https://enormous-lime-c78.notion.site/Sign-f46fdfda5ef8493983e70ca025712d7d?pvs=4
 
 **요약 / 서비스 내용**
 
