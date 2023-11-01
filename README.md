@@ -1,11 +1,11 @@
 # 청중 응답 시스템 Sign
 
-![Apple_iPhone_11_Pro_Max_Presentation](https://github.com/otterlee9043/sign/assets/43086065/d5f2c32b-0438-4a98-89fd-e7f555921185)[screen-recording (7).webm](https://github.com/otterlee9043/sign/assets/43086065/df6d0d72-e47d-4488-88dc-1ff5af843644)
+![Apple_iPhone_11_Pro_Max_Presentation](https://github.com/otterlee9043/sign/assets/43086065/d5f2c32b-0438-4a98-89fd-e7f555921185)
 
 
 ## **Github** https://github.com/otterlee9043/sign
 
-## **개발노트**  [📔](https://www.notion.so/Sign-f46fdfda5ef8493983e70ca025712d7d?pvs=21)
+## **개발노트**  [📔]([https://www.notion.so/Sign-f46fdfda5ef8493983e70ca025712d7d?pvs=21](https://enormous-lime-c78.notion.site/Sign-f46fdfda5ef8493983e70ca025712d7d?pvs=4))
 
 **요약 / 서비스 내용**
 
