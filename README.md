@@ -84,5 +84,6 @@ Spring Boot, React, MariaDB, AWS EC2, ECS, Docker, Nginx
 
 ![sign_ERD](https://github.com/otterlee9043/sign/assets/43086065/046f9ed2-8ad8-40f9-8653-bbf3211f7b6b)
 
+
 ### REST API 디자인
 
