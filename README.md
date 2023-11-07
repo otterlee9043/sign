@@ -2,10 +2,7 @@
 
 ![Apple_iPhone_11_Pro_Max_Presentation](https://github.com/otterlee9043/sign/assets/43086065/d5f2c32b-0438-4a98-89fd-e7f555921185)
 
-
-## **Github** https://github.com/otterlee9043/sign
-
-## **개발노트**  https://enormous-lime-c78.notion.site/Sign-f46fdfda5ef8493983e70ca025712d7d?pvs=4
+## **개발 노트**[➡️ 📗 ⬅️]([https://www.notion.so/Codee-c82de59e16694e5ea1d444fa87b6a0a8?pvs=21](https://enormous-lime-c78.notion.site/Sign-f46fdfda5ef8493983e70ca025712d7d?pvs=4))
 
 **요약 / 서비스 내용**
 
